@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const Container = styled.div`
   padding: 3% 5%;
-  width: 100%;
+  width: 30%;
   position: fixed;
   display: flex;
   justify-content: space-between;
@@ -29,6 +29,11 @@ const TitleText = styled.h1`
 const NavItemList = styled.div`
   display: inline-flex;
   align-items: center;
+  a {
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
 `;
 
 const NavItem = styled(Link)`

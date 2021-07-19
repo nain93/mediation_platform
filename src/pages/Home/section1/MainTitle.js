@@ -14,6 +14,9 @@ const TitleText = styled.div`
   color: #29498e;
   font-weight: 800;
   display: flex;
+  @media screen and (max-width: 767px) {
+    font-size: 40px;
+  }
 `;
 
 const TitleDesc = styled.div`
